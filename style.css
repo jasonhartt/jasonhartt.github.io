@@ -1,0 +1,57 @@
+/* Some simple styling for single large image (resume)
+  plus a few favicons in footer */
+
+body {
+  background-color: #70A170;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+/* The resume .png image */
+.resume img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1056px;
+  max-width: 816px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+/* 'follow me' icons + text at bottom of page */
+.favicons {
+  padding-top: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+.favicons img {
+  padding: 0px, 4px;
+  max-height: 2.5rem;
+}
+
+/* Seems to work well across top-20 devices */
+@media screen and (max-width: 900px) {
+  .resume img {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  body {
+    font-size: 1rem;
+  }
+  .favicons img {
+    max-height: 1.6rem;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .favicons img {
+    max-height: 1.4rem;
+    padding: 0px;
+  }
+}
